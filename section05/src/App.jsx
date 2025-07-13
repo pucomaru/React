@@ -7,10 +7,10 @@
 // 리팩토링 해보기 상태변수 분리 (불필요한 리렌더링 발생하지 않게) 모듈화 ㄱㄱ
 
 import "./App.css";
-import { useState } from "react";
 import Button from "./components/Button";
-import Bulb from "./components/Bulb"
-import Counter from "./components/Counter"
+
+import Register from "./components/Register"
+import HookExam from "./components/HookExam";
 
 function App() {
   // const buttonProps = {
@@ -30,9 +30,8 @@ function App() {
         <Header />
         {/* <div> 자식 요소 </div> */}
       {/* </Button> */}
-      <Bulb/>
-      <Counter/>
-
+        <Register />
+        <HookExam /> 
     </>
   );
 }
